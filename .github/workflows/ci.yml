@@ -27,3 +27,6 @@ jobs:
 
     - name: Run unit tests
       run: dotnet test --no-build --configuration Release
+        
+    - name: Security scan for vulnerable packages
+      run: dotnet list package --vulnerable
