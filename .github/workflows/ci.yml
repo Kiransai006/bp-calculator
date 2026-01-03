@@ -30,3 +30,12 @@ jobs:
         
     - name: Security scan for vulnerable packages
       run: dotnet list package --vulnerable
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Deploy application (mock)
+      run: |
+        echo "Deploying BP Calculator application..."
+        echo "Build passed, tests passed, deployment successful."
