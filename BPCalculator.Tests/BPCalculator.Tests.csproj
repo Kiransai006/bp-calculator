@@ -21,6 +21,8 @@
 	<ItemGroup>
 		<ProjectReference Include="..\BPCalculator\BPCalculator.csproj" />
 	</ItemGroup>
-
+	<ItemGroup>
+		<PackageReference Include="coverlet.collector" Version="6.0.0" />
+	</ItemGroup>
 
 </Project>
